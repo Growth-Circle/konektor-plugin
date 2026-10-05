@@ -16,10 +16,10 @@ The package is prepared for review. A local package check does not prove a produ
 
 ## Package
 
-- [ ] Run `npm run validate` and `npm test`.
+- [x] Run `npm run validate` and `npm test`.
 - [ ] Check English and Indonesian guides against the released UI.
-- [ ] Confirm the public repository contains no credentials or private application code.
-- [ ] Confirm package version, original logo, publisher GROW, and repository URL.
+- [x] Confirm the public repository contains no credentials or private application code.
+- [x] Confirm package version, original logo, publisher GROW, and repository URL.
 
 ## Marketplace
 
@@ -47,3 +47,14 @@ Permissions: Read access and token refresh. Users select authorized workspaces i
 Revocation: Settings → API & Webhooks → AI Connections → Cursor / Grok Bot → Revoke access.
 
 Support: Open an issue in the plugin repository. Do not include credentials or member data.
+
+## Preview verification
+
+The package validator and eight package tests passed for version 0.1.0.
+[GitHub package checks passed](https://github.com/Growth-Circle/konektor-plugin/actions/runs/37349194131).
+
+The application source passed 125 focused tests and scoped lint checks.
+Independent review checked the OAuth client, callback restrictions, permissions, and package configuration.
+
+Production client metadata returned HTTP 404 during this check. Authentication cannot work until the application release supplies it.
+No authenticated Cursor or Grok Bot session was verified. No marketplace submission was sent.
