@@ -1,0 +1,28 @@
+name: Connection problem
+description: Report a plugin or connection problem without credentials or customer data.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include passwords, API keys, OAuth tokens, or customer data.
+        Send security reports privately to security@konektor.id.
+  - type: input
+    id: client
+    attributes:
+      label: Client and version
+      description: State the Cursor or Grok Bot version.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Plugin version
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps and result
+      description: Use fictional data. State the expected result and the actual result.
+    validations:
+      required: true

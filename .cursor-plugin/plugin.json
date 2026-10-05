@@ -1,0 +1,15 @@
+{
+  "name": "konektor",
+  "version": "0.1.0",
+  "description": "Read Konektor workspace analytics, leads, ads, WhatsApp tracking, and Inbox data through OAuth.",
+  "author": {
+    "name": "GROW"
+  },
+  "homepage": "https://konektor.id",
+  "repository": "https://github.com/Growth-Circle/konektor-plugin",
+  "license": "MIT",
+  "keywords": ["konektor", "crm", "whatsapp", "analytics", "marketing", "mcp"],
+  "logo": "assets/konektor.svg",
+  "skills": ["skills/konektor"],
+  "mcpServers": "mcp.json"
+}

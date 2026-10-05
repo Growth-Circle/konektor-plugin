@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "konektor": {
+      "url": "https://mcp.konektor.id/mcp/claude",
+      "auth": {
+        "CLIENT_ID": "https://konektor.id/oauth/clients/cursor.json",
+        "scopes": [
+          "agent.workspace.read",
+          "agent.analytics.read",
+          "agent.leads.read",
+          "agent.conversions.read",
+          "agent.ads.read",
+          "agent.rotators.read",
+          "agent.inbox.read",
+          "agent.rules.read",
+          "agent.agentic.read",
+          "offline_access"
+        ]
+      }
+    }
+  }
+}
