@@ -53,7 +53,7 @@ Support: Open an issue in the plugin repository. Do not include credentials or m
 The package validator and eight package tests passed for version 0.1.0.
 [GitHub package checks passed](https://github.com/Growth-Circle/konektor-plugin/actions/runs/37349194131).
 
-The application source passed 187 tests in 27 files and scoped lint checks.
+The application source passed 198 tests in 27 files and scoped lint checks.
 The application build and full type checks also passed.
 Independent review checked the OAuth client, callback restrictions, permissions, and package configuration.
 
@@ -70,5 +70,6 @@ The application release completed on 6 October 2026.
 Production client metadata returned HTTP 200.
 OAuth discovery passed for both callbacks. Authorization redirected to Konektor login with HTTP 302.
 The checks verified PKCE S256, read scopes, the resource URL, and the login destination.
+Manual discovery also passed for `https://mcp.konektor.id/mcp` with the official Cursor client.
 Previous application secrets and bindings were preserved. The public client was added to the existing allowlist.
 No authenticated Cursor or Grok Bot session was verified. No marketplace submission was sent.
