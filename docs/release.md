@@ -53,9 +53,20 @@ Support: Open an issue in the plugin repository. Do not include credentials or m
 The package validator and eight package tests passed for version 0.1.0.
 [GitHub package checks passed](https://github.com/Growth-Circle/konektor-plugin/actions/runs/37349194131).
 
-The application source passed 125 focused tests and scoped lint checks.
+The application source passed 183 tests in 26 files and scoped lint checks.
 The application build and full type checks also passed.
 Independent review checked the OAuth client, callback restrictions, permissions, and package configuration.
 
-Production client metadata returned HTTP 404 during this check. Authentication cannot work until the application release supplies it.
+The official MCP client SDK passed desktop and cloud callbacks with modern and legacy HTTP protocol negotiation.
+These isolated checks cover token exchange, read tools, workspace restrictions, token refresh, and grant revocation.
+Claude access and refresh remained valid after Cursor reauthorization and revocation.
+The API key route checks also passed.
+These checks use fictional accounts and aggregates. They do not prove a production client login.
+
+Cursor CLI recognized Konektor in an isolated project with status `requires_authentication`.
+Global MCP settings were not changed.
+
+Production OAuth discovery passed for both callbacks.
+Client metadata returned HTTP 404. Authorization returned HTTP 400 with `invalid_client`.
+Authentication cannot work until the application release supplies the client metadata and allowlist.
 No authenticated Cursor or Grok Bot session was verified. No marketplace submission was sent.
