@@ -5,7 +5,7 @@
 Konektor connects Cursor and Grok Bot to your authorized Konektor workspaces through MCP and OAuth.
 GROW maintains this plugin in the Growth-Circle GitHub organization.
 
-**Preview:** The package is ready for source review. The new OAuth client requires an application release before authentication can work.
+**Preview:** The public OAuth client is deployed. Production metadata and login redirect checks passed.
 Cursor and Grok Bot login checks and marketplace approval are pending. See the [release checklist](docs/release.md).
 
 Ask for workspace metrics, campaign results, conversion delivery status, WhatsApp tracking, and authorized lead or Inbox data.

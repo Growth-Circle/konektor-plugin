@@ -5,7 +5,7 @@
 Plugin ini menghubungkan Cursor dan Grok Bot ke workspace Konektor yang Anda izinkan melalui MCP dan OAuth.
 GROW mengelola plugin ini di organisasi GitHub Growth-Circle.
 
-**Pratinjau:** Paket siap ditinjau. Client OAuth baru membutuhkan rilis aplikasi sebelum autentikasi dapat digunakan.
+**Pratinjau:** Client OAuth publik sudah dirilis. Pemeriksaan metadata produksi dan redirect ke login lulus.
 Pengujian login Cursor dan Grok Bot serta persetujuan marketplace masih menunggu. Lihat [checklist rilis](release.md).
 
 Anda dapat meminta ringkasan lead, hasil campaign, status pengiriman konversi, tracking WhatsApp, serta data lead atau Kotak Masuk yang diizinkan.

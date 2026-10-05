@@ -4,9 +4,9 @@ The package is prepared for review. A local package check does not prove a produ
 
 ## Application
 
-- [ ] Deploy the fixed public client metadata and resolver.
+- [x] Deploy the fixed public client metadata and resolver.
 - [ ] Verify that consent shows Cursor / Grok Bot.
-- [ ] Run `npm run verify:oauth` against production.
+- [x] Run `npm run verify:oauth` against production.
 - [ ] Complete OAuth from Cursor with an eligible test workspace.
 - [ ] Complete OAuth from Grok Bot with an eligible test workspace.
 - [ ] List tools and run one aggregate read in each client.
@@ -53,7 +53,7 @@ Support: Open an issue in the plugin repository. Do not include credentials or m
 The package validator and eight package tests passed for version 0.1.0.
 [GitHub package checks passed](https://github.com/Growth-Circle/konektor-plugin/actions/runs/37349194131).
 
-The application source passed 183 tests in 26 files and scoped lint checks.
+The application source passed 187 tests in 27 files and scoped lint checks.
 The application build and full type checks also passed.
 Independent review checked the OAuth client, callback restrictions, permissions, and package configuration.
 
@@ -66,7 +66,9 @@ These checks use fictional accounts and aggregates. They do not prove a producti
 Cursor CLI recognized Konektor in an isolated project with status `requires_authentication`.
 Global MCP settings were not changed.
 
-Production OAuth discovery passed for both callbacks.
-Client metadata returned HTTP 404. Authorization returned HTTP 400 with `invalid_client`.
-Authentication cannot work until the application release supplies the client metadata and allowlist.
+The application release completed on 6 October 2026.
+Production client metadata returned HTTP 200.
+OAuth discovery passed for both callbacks. Authorization redirected to Konektor login with HTTP 302.
+The checks verified PKCE S256, read scopes, the resource URL, and the login destination.
+Previous application secrets and bindings were preserved. The public client was added to the existing allowlist.
 No authenticated Cursor or Grok Bot session was verified. No marketplace submission was sent.
