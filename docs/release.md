@@ -54,6 +54,7 @@ The package validator and eight package tests passed for version 0.1.0.
 [GitHub package checks passed](https://github.com/Growth-Circle/konektor-plugin/actions/runs/37349194131).
 
 The application source passed 125 focused tests and scoped lint checks.
+The application build and full type checks also passed.
 Independent review checked the OAuth client, callback restrictions, permissions, and package configuration.
 
 Production client metadata returned HTTP 404 during this check. Authentication cannot work until the application release supplies it.
